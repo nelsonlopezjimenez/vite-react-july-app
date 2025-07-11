@@ -1,25 +1,39 @@
 // ---------- App.jsx setup for the tutorial
-function Square({ v }) {
-  return <button className="square">{v}</button>
+
+import { useState } from "react";
+
+function Square() {
+  const [value, setValue] = useState(null);
+
+  function handleClick() {
+    console.log("clicked");
+    setValue('X');
+  }
+  return (
+    <button className="square" onClick={handleClick}>{value}</button>
+  )
 }
 function Board() {
   return (
     <>
       <div className="board-row">
-        <Square v='1'/>
-        <Square v='2'/>
-        <Square v='3'/>
+        <Square />
+        <Square />
+        <Square />
       </div>
+      
       <div className="board-row">
-        <Square v='4'/>
-        <Square v='5'/>
-        <Square v='6'/>
+        <Square />
+        <Square />
+        <Square />
       </div>
+      
       <div className="board-row">
-        <Square v='7'/>
-        <Square v='8'/>
-        <Square v='9'/>
+        <Square />
+        <Square />
+        <Square />
       </div>
+      
     </>
   )
 }
