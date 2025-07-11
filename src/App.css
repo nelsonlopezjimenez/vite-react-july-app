@@ -4,6 +4,9 @@
   padding: 2rem;
   text-align: center;
 }
+button {
+  border: 3px black solid;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
