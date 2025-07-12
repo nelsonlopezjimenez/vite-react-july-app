@@ -5,7 +5,26 @@
 1. vite-react-july-app
 1. compress node_modules
 1. start tictactoe
-1. 
+1. Steps:
+    1. Inspecting the starting code
+    1. Building the board
+    1. Passing data through props
+    1. Making an interactive component
+    1. React developer tools
+    1. Completing the game
+    1. Lifting state up
+    1. Why immutability is important
+    1. Taking turns
+    1. Declaring the winner
+    1. Adding time travel
+    1. Storing a history of moves
+    1. Lifting state up, again
+    1. Showing the past moves
+    1. Picking a key
+    1. Implementing time travel
+    1. Final cleanup
+    1. Wrapping up
+1. Next
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

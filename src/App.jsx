@@ -15,13 +15,15 @@ function Square({value, handleClick}) {
   )
 }
 function Board() {
+  const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
 
   function handleClick(i) {
     const nextSquares = squares.slice();
-    nextSquares[i] = 'X';
-    console.log("clicked", i.target);
+    xIsNext ? nextSquares[i] = 'X' : nextSquares[i] = 'O'
+    console.log("clicked", i);
     setSquares(nextSquares);
+    setXIsNext(!xIsNext);
   }
 
   return (
